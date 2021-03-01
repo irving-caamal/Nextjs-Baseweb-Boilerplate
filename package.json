@@ -13,5 +13,13 @@
     "styletron-engine-atomic": "1.4.6",
     "styletron-react": "5.2.7"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
