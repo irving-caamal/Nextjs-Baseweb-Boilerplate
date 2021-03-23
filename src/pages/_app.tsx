@@ -4,6 +4,11 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import type { NextPage, NextPageContext } from 'next';
 import { Provider as StyletronProvider } from 'styletron-react';
+import { BaseProvider } from 'baseui';
+import {
+  LightTheme,
+} from 'baseui';
+
 import { styletron } from '../helpers/styletron';
 
 export default class MyApp extends App {
@@ -34,9 +39,17 @@ export default class MyApp extends App {
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-          <StyletronProvider value={styletron}>
-            <Component {...pageProps} />
+        <BaseProvider 
+          theme={LightTheme}
+        >
+          <StyletronProvider 
+            value={styletron}
+          >
+            <Component 
+              {...pageProps} 
+            />
           </StyletronProvider>
+        </BaseProvider>
       </React.Fragment>
     );
   }
