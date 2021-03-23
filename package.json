@@ -10,6 +10,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
+    "baseui": "^9.111.2",
     "next": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1",
