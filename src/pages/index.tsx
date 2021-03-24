@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled, useStyletron } from 'styletron-react';
-
+import NavBar from '../components/NavBar'
 // statically styled component
 const Title = styled('h1', {
   color: 'red',
@@ -18,6 +18,7 @@ const Home: React.FC = function () {
   const [css] = useStyletron();
   return (
     <React.Fragment>
+      <NavBar  />
       <Title>Title</Title>
       <SubTitle $size={50}>Subtitle</SubTitle>
       <p className={css({ fontSize: '32px' })}>Styled by hook</p>
