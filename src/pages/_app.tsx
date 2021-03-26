@@ -4,13 +4,15 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import type { NextPage, NextPageContext } from 'next';
 import { Provider as StyletronProvider } from 'styletron-react';
-import { BaseProvider } from 'baseui';
+import { BaseProvider, createThemedStyled } from 'baseui';
+import type { ThemeT } from 'baseui/styles/types';
 import {
   LightTheme,
 } from 'baseui';
 
 import { styletron } from '../helpers/styletron';
 
+export const themedStyled = createThemedStyled<ThemeT>();
 export default class MyApp extends App {
   constructor(props: AppProps) {
     super(props);
