@@ -29,16 +29,16 @@ jobs:
           node-version: 14.x
 
       - name: 🧰 Install dependencies
-        run: yarn run install
+        run: npm install
 
       - name: 📦 Build project
-        run: yarn run build --if-present
+        run: npm run build --if-present
 
       # - name: 🧹 Run lint
-      #   run: yarn run lint
+      #   run: npm run lint
 
       # - name: 🐛 Run tests
-      #   run: yarn run test
+      #   run: npm run test
 
       # Deploy to Netlify with a personalized message
       - name: 🚀 Deploy to Netlify
