@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.21.5",
     "jest": "^26.6.3",
+    "next-on-netlify": "^2.9.0",
     "prettier": "2.2.1",
     "ts-jest": "^26.5.2",
     "ts-node": "^9.1.1",
