@@ -1,10 +1,10 @@
-name: Deploy on new content dispatch
+name: Deploy to netlify
 on: pull_request
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  mergeContent:
+  netlify_deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -16,6 +16,6 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_TO_PROD: true
-          build_command: yarn generate
-          build_directory: dist
+          build_command: yarn build
+          build_directory: .next
           install_command: yarn
