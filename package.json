@@ -7,7 +7,8 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "start": "next start",
     "test": "jest",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "baseui": "^9.111.2",
