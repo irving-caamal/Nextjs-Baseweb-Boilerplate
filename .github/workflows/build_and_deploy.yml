@@ -1,7 +1,5 @@
 name: Deploy on new content dispatch
-on:
-  repository_dispatch:
-    types: [merge-content, pull]
+on: pull_request
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
