@@ -49,3 +49,13 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
           args: deploy -m 'v${{ steps.package-version.outputs.current-version}} ・ ${{ github.head_ref }}'
+
+      # Publish the inspect and preview link to the PR
+      - name: 👓 Netlify Preview URL
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT: "This pull request is being automatically deployed to Netlify.\n\n🔍 Inspect: ${{ steps.deploy-netlify.outputs.NETLIFY_LOGS_URL }}\n✅ Preview: ${{ steps.deploy-netlify.outputs.NETLIFY_URL }}"
+        with:
+          msg: ${{ env.OUTPUT }}
+          check_for_duplicate_msg: false
