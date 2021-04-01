@@ -3,9 +3,13 @@ name: Test and Build Workflow
 on:
   pull_request:
     branches:
-      - master
       - main
     types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+      - tests
+
 
 jobs:
   test:
