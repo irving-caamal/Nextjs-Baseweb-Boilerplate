@@ -3,7 +3,7 @@
   "author": "Irving Caamal",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
