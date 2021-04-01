@@ -1,3 +1,12 @@
+> This is part of post entry called: **The Gold Mine of UI Frameworks: Base Web React by UBER**
+
+> You can check it in
+>
+> * [Medium](https://irvv17.medium.com/the-gold-mine-of-ui-frameworks-baseweb-bbb1e51bc367)
+
+Feel free to make a PR and help me to improve this repo :)
+
+
 # Baseweb UI Boilerplate
 
 ## What is this?
@@ -44,12 +53,3 @@
     ├── README.md
     ├── tsconfig.jest.json
     └── tsconfig.json
-
-> This is part of blog entry called: **The Gold Mine of UI Frameworks: Base Web React by UBER**
-
-> You can check it in
-> 1. [Medium]()
-> 2. [DEV]()
-
-
-Feel free to make a PR and help me to improve this repo  :)
