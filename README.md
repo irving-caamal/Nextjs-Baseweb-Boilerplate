@@ -1,11 +1,9 @@
 > This is part of post entry called: **The Gold Mine of UI Frameworks: Base Web React by UBER**
 
 > You can check it in
->
 > * [Medium](https://irvv17.medium.com/the-gold-mine-of-ui-frameworks-baseweb-bbb1e51bc367)
 > * [DEV](https://dev.to/irvv17/the-gold-mine-of-ui-frameworks-base-web-react-by-uber-5ac3)
-> * [Hashnode](https://irvv17.hashnode.dev/the-gold-mine-of-ui-frameworks-baseweb
-)
+> * [Hashnode](https://irvv17.hashnode.dev/the-gold-mine-of-ui-frameworks-baseweb)
 
 Feel free to make a PR and help me to improve this repo :)
 
