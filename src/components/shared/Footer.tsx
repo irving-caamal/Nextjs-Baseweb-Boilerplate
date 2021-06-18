@@ -1,17 +1,16 @@
 import React from 'react';
 import { Block } from 'baseui/block';
 import Link from 'next/link';
-import { themedStyled } from '../pages/_app';
+import { themedStyled } from '../../pages/_app';
 
 const UberLogo = () => (
   <React.Fragment>
     <img
-      src="https://res.cloudinary.com/dogfasxu0/image/upload/v1611551393/icons/percussion-instrument_ztqs5s.svg"
+      src="https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg"
       alt="Base Web"
       height="40px"
       width="97px"
     />
-    Instrumentos de Percusion 2021, Todos los derechos reservados
   </React.Fragment>
 );
 
@@ -19,7 +18,6 @@ const StyledFooter = themedStyled(
   'footer',
   ({ $theme: { typography, sizing, colors, name } }) => ({
     ...typography.font300,
-    // position: 'sticky',
     bottom: 0,
     color: colors.contentPrimary,
     backgroundColor: colors.headerNavigationFill,
@@ -54,27 +52,9 @@ function Footer() {
   return (
     <StyledFooter>
       <Block paddingBottom="scale1000">
-        <StyledLink href="https://github.com/uber/baseweb" target="_blank">
-          GitHub
+        <StyledLink href="https://github.com/irvv17/Nextjs-Baseweb-Boilerplate" target="_blank">
+          Source Code on GitHub
         </StyledLink>
-        <StyledLink href="https://twitter.com/BaseWebReact" target="_blank">
-          Twitter
-        </StyledLink>
-        <StyledLink
-          href="https://join.slack.com/t/baseui/shared_invite/zt-5f1s4d10-1D2uywAECAG50m64PTH9cw"
-          target="_blank"
-        >
-          Slack Chat room
-        </StyledLink>
-        <StyledLink
-          href="https://github.com/uber/baseweb/releases"
-          target="_blank"
-        >
-          Changelog
-        </StyledLink>
-        <Link href="/blog">
-          <StyledLink href="/blog">Blog</StyledLink>
-        </Link>
       </Block>
       <UberLogo />
     </StyledFooter>
