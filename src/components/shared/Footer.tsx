@@ -1,6 +1,5 @@
 import React from 'react';
 import { Block } from 'baseui/block';
-import Link from 'next/link';
 import { themedStyled } from '../../pages/_app';
 
 const UberLogo = () => (
@@ -16,7 +15,7 @@ const UberLogo = () => (
 
 const StyledFooter = themedStyled(
   'footer',
-  ({ $theme: { typography, sizing, colors, name } }) => ({
+  ({ $theme: { typography, sizing, colors } }) => ({
     ...typography.font300,
     bottom: 0,
     color: colors.contentPrimary,
@@ -52,7 +51,10 @@ function Footer() {
   return (
     <StyledFooter>
       <Block paddingBottom="scale1000">
-        <StyledLink href="https://github.com/irvv17/Nextjs-Baseweb-Boilerplate" target="_blank">
+        <StyledLink
+          href="https://github.com/irvv17/Nextjs-Baseweb-Boilerplate"
+          target="_blank"
+        >
           Source Code on GitHub
         </StyledLink>
       </Block>

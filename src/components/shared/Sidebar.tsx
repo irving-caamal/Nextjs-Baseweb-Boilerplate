@@ -11,7 +11,6 @@ import { themedStyled } from '../../pages/_app';
 
 const SidebarWrapper = themedStyled('nav', (props: any) => {
   const $hideSideNavigation = props['$hideSideNavigation'];
-  const $theme = props['$theme'];
   const $isOpen = props['$isOpen'];
   return {
     display: $isOpen ? 'block' : 'none',

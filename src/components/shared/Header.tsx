@@ -15,7 +15,7 @@ const Header: React.FC = function () {
     <Block
       overrides={{
         Block: {
-          style: ({ $theme }) => ({
+          style: () => ({
             height: '100vh',
           }),
         },
@@ -74,7 +74,14 @@ const Header: React.FC = function () {
             </FlexGridItem>
             <FlexGridItem display="none"></FlexGridItem>
             <FlexGridItem {...itemProps}>
-              <Image src={'https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg'} width={600} height={400} unoptimized={true} />
+              <Image
+                src={
+                  'https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg'
+                }
+                width={600}
+                height={400}
+                unoptimized={true}
+              />
             </FlexGridItem>
           </FlexGrid>
         </FlexGridItem>

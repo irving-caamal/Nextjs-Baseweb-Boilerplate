@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import { AppNavBar, setItemActive, NavItemT } from 'baseui/app-nav-bar';
 import { ChevronDown, Delete, Overflow, Upload } from 'baseui/icon';
 
@@ -18,7 +18,7 @@ const Nav: React.FC = function () {
   ]);
 
   function handleMainItemSelect(item: NavItemT) {
-    setMainItems(prev => setItemActive(prev, item));
+    setMainItems((prev) => setItemActive(prev, item));
   }
   return (
     <AppNavBar
@@ -34,6 +34,6 @@ const Nav: React.FC = function () {
       onUserItemSelect={(item) => console.log(item)}
     />
   );
-}
+};
 
 export default Nav;

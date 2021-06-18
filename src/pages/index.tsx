@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Block } from 'baseui/block';
 import { Tag } from 'baseui/tag';
 import { Card, StyledBody, StyledTitle } from 'baseui/card';
@@ -27,7 +27,7 @@ const cardOverrides = {
 
 const mainCardOverrides = {
   Root: {
-    style: ({ $theme }) => ({
+    style: () => ({
       borderLeftColor: 'transparent',
       borderRightColor: 'transparent',
       borderTopColor: 'transparent',
@@ -43,7 +43,6 @@ const blockProps = {
 };
 
 const Home: React.FC = function () {
-
   return (
     <>
       <Layout hasHeader={true}>
@@ -79,9 +78,7 @@ const Home: React.FC = function () {
                 {mockServices.length > 0 &&
                   mockServices.map((service) => {
                     return (
-                      <FlexGridItem
-                        key={service.id}
-                      >
+                      <FlexGridItem key={service.id}>
                         <Block>
                           <Card overrides={mainCardOverrides}>
                             <StyledTitle>
@@ -92,7 +89,9 @@ const Home: React.FC = function () {
                                   className={'card_heading'}
                                 >
                                   <Image
-                                    src={'https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg'}
+                                    src={
+                                      'https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg'
+                                    }
                                     layout={'fixed'}
                                     width={60}
                                     height={50}
@@ -102,7 +101,9 @@ const Home: React.FC = function () {
                                 </FlexGridItem>
                               </FlexGrid>
                             </StyledTitle>
-                            <StyledBody className={'card_body'}>{service.description}</StyledBody>
+                            <StyledBody className={'card_body'}>
+                              {service.description}
+                            </StyledBody>
                             <a href="/getting-started/setup">Learn More</a>
                           </Card>
                         </Block>
@@ -121,7 +122,6 @@ const Home: React.FC = function () {
             paddingRight={'10vw'}
             {...blockProps}
           >
-          
             <ContentWrapper>
               <FlexGrid
                 flexGridColumnCount={[1, 1]}
