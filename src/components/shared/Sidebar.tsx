@@ -8,7 +8,6 @@ import {
 import Link from 'next/link';
 
 import { themedStyled } from '../../pages/_app';
-import Routes from '../../routes';
 
 const SidebarWrapper = themedStyled('nav', (props: any) => {
   const $hideSideNavigation = props['$hideSideNavigation'];
@@ -23,6 +22,7 @@ const SidebarWrapper = themedStyled('nav', (props: any) => {
   };
 });
 
+const Routes = [];
 const CustomStyledNavItem = withStyle(
   StyledNavItem,
   (props: { $theme; $active; $hasItemId; $level }) => ({
