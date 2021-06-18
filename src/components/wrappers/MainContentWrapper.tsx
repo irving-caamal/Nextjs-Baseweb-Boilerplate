@@ -1,4 +1,4 @@
-import { themedStyled } from '../../../pages/_app';
+import { themedStyled } from '../../pages/_app';
 
 const ContentWrapper = themedStyled(
   'main',
