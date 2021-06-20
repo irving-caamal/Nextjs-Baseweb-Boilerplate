@@ -6,13 +6,20 @@ import type { NextPage, NextPageContext } from 'next';
 import { Provider as StyletronProvider } from 'styletron-react';
 import { BaseProvider, createThemedStyled } from 'baseui';
 import type { ThemeT } from 'baseui/styles/types';
-import {
-  LightTheme,
-} from 'baseui';
+import { Block } from 'baseui/block';
 
+import { theme } from '../theme/index';
 import { styletron } from '../helpers/styletron';
 
 export const themedStyled = createThemedStyled<ThemeT>();
+
+const blockProps = {
+  color: 'contentPrimary',
+  backgroundColor: 'backgroundPrimary',
+  maxWidth: '100vw',
+  minHeight: '100vh',
+};
+
 export default class MyApp extends App {
   constructor(props: AppProps) {
     super(props);
@@ -39,11 +46,13 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-        <BaseProvider theme={LightTheme}>
+        <BaseProvider theme={theme}>
           <StyletronProvider value={styletron}>
-            <Component {...pageProps} />
+            <Block {...blockProps}>
+              <Component {...pageProps} />
+            </Block>
           </StyletronProvider>
         </BaseProvider>
       </React.Fragment>

@@ -5,22 +5,23 @@ import { Server, Sheet } from 'styletron-engine-atomic';
 import { styletron } from '../helpers/styletron';
 
 class MyDocument extends Document<{ stylesheets: Sheet[] }> {
- static async getInitialProps(context) {
+  static async getInitialProps(context) {
     const renderPage = () =>
       context.renderPage({
+        // eslint-disable-next-line react/display-name
         enhanceApp: (App) => (props) => (
           <StyletronProvider value={styletron}>
             <App {...props} />
           </StyletronProvider>
         ),
-      })
+      });
 
     const initialProps = await Document.getInitialProps({
       ...context,
       renderPage,
-    })
-    const stylesheets = (styletron as Server).getStylesheets() || []
-    return { ...initialProps, stylesheets }
+    });
+    const stylesheets = (styletron as Server).getStylesheets() || [];
+    return { ...initialProps, stylesheets };
   }
 
   render() {
