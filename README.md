@@ -27,11 +27,11 @@ Feel free to make a PR and help me to improve this repo :)
 3. `yarn dev` or `npm run dev`
 ### How it works?
 
-1. Start with create **Styletron** application
-2. Set typescript
-3. Set Eslint and Prettier preferences
-4. Set Baseui into our next app
-5. Set our first component
+1. Start creating **Styletron** application
+2. Config typescript
+3. Config Eslint and Prettier preferences
+4. Add Baseui to our app
+5. Add our first page with components
 6. Enjoy basewebui
 
 ### Project structure
