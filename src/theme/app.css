@@ -1,20 +1,21 @@
-{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 ::selection {
-    background: #276EF1;
-    color: white;
-}
-html {
-    --top-spacing: 100px;
-    scroll-padding-top: var(--top-spacing);
+  background: #276ef1;
+  color: white;
 }
 
 body {
-    margin: var(--top-spacing) auto;
-
-    max-width: 400px;
-    padding: 0 20px;
-    font: 18px/1.4 system-ui;
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background: #276ef1;
+  color: white;
+}
+.white-image {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }

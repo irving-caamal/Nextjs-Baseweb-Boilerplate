@@ -2,7 +2,7 @@ import React from 'react';
 import { Block } from 'baseui/block';
 import { themedStyled } from '../../pages/_app';
 
-const UberLogo = () => (
+const Logo = () => (
   <React.Fragment>
     <img
       src="https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg"
@@ -19,7 +19,7 @@ const StyledFooter = themedStyled(
     ...typography.font300,
     bottom: 0,
     color: colors.contentPrimary,
-    backgroundColor: colors.headerNavigationFill,
+    backgroundColor: colors.primary,
     width: '100%',
     marginTop: sizing.scale1400,
     paddingTop: sizing.scale1600,
@@ -58,7 +58,7 @@ function Footer() {
           Source Code on GitHub
         </StyledLink>
       </Block>
-      <UberLogo />
+      <Logo />
     </StyledFooter>
   );
 }

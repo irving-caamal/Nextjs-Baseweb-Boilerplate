@@ -25,7 +25,7 @@ const Nav: React.FC = function () {
       title="Base web UI boilerplate"
       mainItems={mainItems}
       onMainItemSelect={handleMainItemSelect}
-      username="Umka Marshmallow"
+      username="User"
       usernameSubtitle="5 Stars"
       userItems={[
         { icon: Overflow, label: 'User A' },
