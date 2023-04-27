@@ -10,32 +10,35 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "baseui": "^10.5.0",
-    "next": "^12.0.2",
-    "styletron-engine-atomic": "^1.4.8",
-    "styletron-react": "^6.0.2"
+    "baseui": "^12.2.0",
+    "next": "^13.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styletron-engine-atomic": "^1.5.0",
+    "styletron-react": "^6.1.0"
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",  
-    "@types/react": "^17.0.34",
+    "@types/baseui": "^8.0.0",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^16.11.6",
+    "@types/react": "^18.2.0",
     "@types/styletron-engine-atomic": "^1.1.1",
     "@types/styletron-react": "^5.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.39.0",
+    "eslint-config-next": "^13.0.7",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-baseui": "^12.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
-    "jest": "^27.3.1",
+    "jest": "^29.0.1",
     "prettier": "^2.4.1",
+    "ts-jest": "^29.1.0",
     "ts-node": "^9.1.1",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "typescript": "^5.0.4"
   },
   "config": {
     "commitizen": {

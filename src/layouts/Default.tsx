@@ -8,7 +8,7 @@ import { HeadingLevel } from 'baseui/heading';
 const Home: React.FC<{
   children: any;
   hasHeader: boolean;
-}> = function (props: { children; hasHeader; }) {
+}> = function (props: { children; hasHeader }) {
   const [hasHeader, SetHasHeader] = useState(props.hasHeader);
   return (
     <>

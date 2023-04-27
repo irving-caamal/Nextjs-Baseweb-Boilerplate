@@ -92,7 +92,7 @@ const Home: React.FC = function () {
                                     src={
                                       'https://res.cloudinary.com/dogfasxu0/Blog/BaseWebGoldMine/binary-thinking.svg'
                                     }
-                                    layout={'fixed'}
+                                    alt="Binary Thinking"
                                     width={60}
                                     height={50}
                                     unoptimized={true}
